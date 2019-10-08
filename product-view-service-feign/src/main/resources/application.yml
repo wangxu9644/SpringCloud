@@ -1,8 +1,6 @@
 spring:
   application:
-    name: product-view-service-feign
-  zipkin:
-    base-url: http://localhost:9411
+    name:  product-view-service-feign
   thymeleaf:
     cache: false
     prefix: classpath:/templates/
@@ -12,7 +10,16 @@ spring:
     mode: HTML5
     servlet:
       content-type: text/html
-#eureka:
-#  client:
-#    serviceUrl:
-#      defaultZone: http://localhost:8761/eureka/
+  zipkin:
+    base-url: http://localhost:9411   
+
+feign.hystrix.enabled: true
+     
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"       
