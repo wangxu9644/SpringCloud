@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
         <module name="eurekaServer" />
+        <module name="Hystrix-DashBoard" />
         <module name="product-view-service-ribbon" />
         <module name="productdataservice" />
         <module name="productviewservicefeign" />
@@ -16,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="config-server" target="1.8" />
       <module name="eurekaServer" target="1.8" />
+      <module name="Hystrix-DashBoard" target="1.8" />
       <module name="product-data-service" target="1.8" />
       <module name="product-view-service-feign" target="1.8" />
       <module name="product-view-service-ribbon" target="1.8" />
